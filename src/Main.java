@@ -1,17 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Dog husky = new Dog("Looney",4,3.5);
-        husky.dogBark();
-        husky.layDown();
 
-        int result;
-        result = husky.giveMeFive();
+        Figure box = new Figure(5,15,10);
+        int boxVolume = box.calculateVolume();
+        System.out.println(boxVolume);
 
-        Dog poodle = new Dog("Verbena",2, 2.1);
-        poodle.dogBark();
-        poodle.layDown();
-
-        int sumResult;
-        sumResult = husky.sum(1,3);
+        Figure shelf = new Figure();
+        // method with formula: S = 2(a · b + a · h + b · h)
+        box.calculateSurfaceVolume();
     }
 }
