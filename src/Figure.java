@@ -23,8 +23,7 @@ public class Figure {
 
     public void calculateSurfaceVolume() {
 
-        int S = 2 * (a * b + a * h + b * h);
-
-        System.out.println(S);
+        int surface = 2 * (this.a * this.b + this.a * this.h + this.b * this.h);
+        System.out.println(surface);
     }
 }
