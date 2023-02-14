@@ -5,7 +5,10 @@ public class Client {
     int code;
 
     // constructor
-    public Client() {
+    public Client(String name, double moneyLeft, int clientCode) {
+        this.code = clientCode;
+        this.name = name;
+        this.money = moneyLeft;
     }
 
     public String sayTere() {
